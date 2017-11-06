@@ -1,0 +1,39 @@
+{
+    "name": "jgInsertTag",
+    "displayName": "jgInsertTag",
+    "description": "Insert my Tag (<=== JG: )",
+    "version": "0.0.1",
+    "publisher": "jongilm",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.jgInsertTag"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.jgInsertTag",
+            "title": "JG Insert Tag"
+        }],
+        "configuration": {
+            "title": "jgInsertTag Configuration",
+            "properties": {
+                "insertDateTime.locale":{
+                    "type": "string",
+                    "default": "",
+                    "description": "Sets the locale to be used. If undefined uses the system locale."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    }
+}
