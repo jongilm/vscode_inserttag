@@ -2,7 +2,7 @@
 rem git init
 rem git add .
 rem git commit -m "Initial checkin"
-rem git add remote https://github.com/jongilm/vscode_inserttag.git
+rem git remote add origin https://github.com/jongilm/vscode_inserttag.git
 rem git push origin master
 rem -----------------------------------------------------
 rem npm install -g vsce
@@ -16,14 +16,15 @@ rem Error: Invalid Resource
 rem -----------------------------------------------------
 
 vsce package
-echo Expect: Created: c:\home\dev_jg\vscode_insertsignature\jgInsertSignature-0.0.1.vsix
+echo Expect: Created: c:\home\dev_jg\vscode_inserttag\jgInsertTag-0.0.1.vsix
 pause
 
-code --install-extension jgInsertSignature-0.0.1.vsix
-echo Expect: Extension 'jgInsertSignature-0.0.1.vsix' was successfully installed!
+code --install-extension jgInsertTag-0.0.1.vsix
+echo Expect: Extension 'jgInsertTag-0.0.1.vsix' was successfully installed!
 pause
 
 code --list-extensions|grep jg
 echo Expect: jongilm.jgInsertSignature
+echo Expect: jongilm.jgInsertTag
 pause
 
