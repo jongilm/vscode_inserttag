@@ -25,6 +25,6 @@ pause
 
 code --list-extensions|grep jg
 echo Expect: jongilm.jgInsertSignature
-echo Expect: jongilm.jgInsertTag
+echo         jongilm.jgInsertTag
 pause
 
